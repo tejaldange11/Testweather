@@ -69,7 +69,8 @@ class Home extends Component {
   
       <TouchableOpacity
           style={{ height: 40,width:200, borderColor: 'gray', borderWidth: 0.3,
-          borderRadius:22,padding:10,marginTop:20,backgroundColor:'green',justifyContent:'center'}}
+          borderRadius:22,padding:10,marginTop:20,justifyContent:'center',
+          backgroundColor: this.state.country.length > 1 ? 'green' : 'pink'}}
           onPress={() => this.countryData()}>
 
           <Text style={{fontSize: 15, marginLeft: 10,color:'#fff',fontWeight:'bold',
